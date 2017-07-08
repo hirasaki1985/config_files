@@ -18,7 +18,7 @@ wget https://github.com/hirasaki1985/config_files/raw/master/bashrc/.bashrc
 
 ## Licence
 
-[MIT](https://github.com/hirasaki1985/【repository name】/blob/master/LICENSE)
+[MIT](https://github.com/hirasaki1985/config_files/blob/master/LICENSE)
 
 ## Author
 
