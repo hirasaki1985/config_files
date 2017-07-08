@@ -1,0 +1,29 @@
+# tool download
+wget https://repo.continuum.io/archive/Anaconda2-4.3.0-Linux-x86_64.sh
+mkdir ~/tools
+mv Anaconda2-4.3.0-Linux-x86_64.sh ~/tools/
+bash ~/tools/Anaconda2-4.3.0-Linux-x86_64.sh
+source ~/.bashrc
+
+
+
+# git download
+mkdir -p /sync/projects
+cd /sync/projects
+git clone https://github.com/Rochester-NRT/RocAlphaGo.git
+
+
+
+# setup
+conda create --name alphago python=2.7
+conda install --yes Cython=0.24 h5py=2.6.0 numpy=1.11.2 scipy=0.18.1 PyYAML=3.12 matplotlib pandas pytest
+pip install --user --no-deps Theano==0.8.2 sgf==0.5 keras==1.2.0 pygtp==0.3
+pip install --user flake8
+pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp27-none-linux_x86_64.whl
+pip install --user scipy h5py
+source activate alphago
+
+
+
+# exec
+find tests -iname "AlphaGo-vs-Lee-Sedol-20160310.sgf" | python -m AlphaGo.preprocessing.game_converter --features all -o debug_feature_planes.hdf5
