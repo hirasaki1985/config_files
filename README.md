@@ -6,7 +6,15 @@ config_files
 
 ## Usage
 
+### .vimrc
+```
+wget https://github.com/hirasaki1985/config_files/raw/master/vim/.vimrc
+```
 
+### .bashrc
+```
+wget https://github.com/hirasaki1985/config_files/raw/master/bashrc/.bashrc
+```
 
 ## Licence
 
