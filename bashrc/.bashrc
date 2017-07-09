@@ -1,3 +1,4 @@
+
 #alias sshconf='vim ~/.ssh/config'
 alias lt='ls -alth | head'
 alias ll='ls -l'                              # long list
@@ -22,3 +23,5 @@ PS1='\[\e[1;34m\][\D{%Y/%m/%d} \t \u@\h \W]\$\[\e[m\] '
 #0;35m   Purple
 #0;36m   Cyan
 #0;37m   White
+
+
