@@ -14,11 +14,11 @@ Overview [概要を書く]
 ## Requirement
 ツールやライブラリを使うのに依存がある場合は，その依存を書く．
 
-## Usage
-使い方を書く
-
 ## Install
 インストール手順を書く
+
+## Usage
+使い方を書く
 
 ## Licence
 
