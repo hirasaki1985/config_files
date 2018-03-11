@@ -4,12 +4,6 @@ alias lt='ls -alth | head'
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 
-# ssh config separate
-alias ssh="cat ~/.ssh/conf.d/config ~/.ssh/conf.d/*.conf > ~/.ssh/config;ssh"
-alias scp="cat ~/.ssh/conf.d/config ~/.ssh/conf.d/*.conf > ~/.ssh/config;scp"
-alias git="cat ~/.ssh/conf.d/config ~/.ssh/conf.d/*.conf > ~/.ssh/config;git"
-alias knife="cat ~/.ssh/conf.d/config ~/.ssh/conf.d/*.conf > ~/.ssh/config;knife"
-
 # sudo environment variable Inheriting
 alias sudo='sudo -E '
 
